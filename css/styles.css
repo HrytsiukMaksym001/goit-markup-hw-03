@@ -298,3 +298,11 @@ color: var(--web-link-color);
         clip: rect(0 0 0 0);
         overflow: hidden;
     }
+
+    .box{
+        margin-bottom: 50px;
+        padding: 20;
+        margin: 20px;
+        background-color: var(--body-bg-color);
+        outline: 2px solis tomato;
+            }
