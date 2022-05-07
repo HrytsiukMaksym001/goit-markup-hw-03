@@ -255,6 +255,11 @@ color: var(--web-link-color);
     }
 
     .hero-btn{
+    display: inline-block;   
+    padding: 20px 40px;
+    outline: 2px solis tomato;
+    text-decoration: none;
+
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
@@ -264,6 +269,7 @@ color: var(--web-link-color);
     background-color: var(--web-link-color);
     cursor: pointer;
     }
+
     .hero-btn:hover,
     .hero-btn:focus{
     font-weight: 700;
@@ -299,10 +305,4 @@ color: var(--web-link-color);
         overflow: hidden;
     }
 
-    .box{
-        margin-bottom: 50px;
-        padding: 20;
-        margin: 20px;
-        background-color: var(--body-bg-color);
-        outline: 2px solis tomato;
-            }
+   
