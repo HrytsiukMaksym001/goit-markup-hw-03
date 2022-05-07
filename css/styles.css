@@ -17,6 +17,7 @@
 
 /* Body properties */
 body {
+    margin: 0;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     background-color: var(--body-bg-color);
@@ -24,18 +25,57 @@ body {
     font-size: 14px;
     line-height: 2;
     }
+    h1, h2, h3, h4, h5, h6, p{
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+    .description-second-title, .team-section-title {
+        margin-bottom: 10px;
+    }
+    .about-title, .team-title{
+        margin-bottom: 50px;
+    }
     
+.header-container, .description-container, .about-container,
+.team-cоntainer, .footer-container
+ {
+    margin: 0 auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
 
+}
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.list{
+    padding: 0px;
+    margin: 0px;
+    list-style: no;
+}
 /*header*/
 .header {
 background-color: var(--header-bg-color);
 }
 /*Hero*/
-.hero{
+.hero-section{
+    padding-top: 200px;
+    padding-bottom: 200px;
+
 background-color: var(--herofooter-bg-color);
+text-align: center;
 }
 /*Team*/
-.team{
+.team-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
 background-color: var(--team-bg-secondhead) 
 }
 .footer{
@@ -43,15 +83,17 @@ background-color: var(--team-bg-secondhead)
 }
 
 
-.hero .title-hero{
+.hero-title{
+margin-top: 0;
+margin-bottom: 30px;
 font-family: 'Roboto';
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 color: var(--header-bg-color);
-text-align: center;
 text-transform: uppercase;
 letter-spacing: 0.06em;
+/* background-color: tomato; */
 }
 
 .logo-navigation, .link-navigation {
@@ -230,6 +272,12 @@ color: var(--web-link-color);
 
     /* button */
     .filter-btn{
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    text-align: center;
+
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -255,10 +303,13 @@ color: var(--web-link-color);
     }
 
     .hero-btn{
-    display: inline-block;   
-    padding: 20px 40px;
-    outline: 2px solis tomato;
-    text-decoration: none;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    min-width: 200px;
+    text-align: center;
+    /* margin-bottom: 200px; */
 
     font-family: 'Roboto';
     font-weight: 700;
@@ -267,6 +318,7 @@ color: var(--web-link-color);
     letter-spacing: 0.06em;
     color: var(--header-bg-color);
     background-color: var(--web-link-color);
+    text-decoration: none;
     cursor: pointer;
     }
 
