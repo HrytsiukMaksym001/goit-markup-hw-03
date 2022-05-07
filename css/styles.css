@@ -25,7 +25,7 @@ body {
     font-size: 14px;
     line-height: 2;
     }
-    h1, h2, h3, h4, h5, h6, p{
+    h1, h2, h3, h4, h5, h6, p, ul{
         margin-top: 0;
         margin-bottom: 0;
         
@@ -38,7 +38,7 @@ body {
     }
     
 .header-container, .description-container, .about-container,
-.team-cоntainer, .footer-container
+.team-cоntainer, .footer-container, .main-container-portfolio
  {
     margin: 0 auto;
     width: 1200px;
@@ -47,13 +47,40 @@ body {
     outline: 2px solid red;
 
 }
-.header-container{
+.main-container-portfolio{
+    padding-top: 94px;
+}
+.navigation-container{
     display: flex;
     align-items: center;
 }
 
+.header-group-container{
+    margin-left: auto;
+    
+}
 
-
+/* Logo */
+.logo-navigation{
+    margin-right: 93px;
+    background-color: tomato;
+}
+.navigation-list{
+    display: flex;
+    align-items: center;
+}
+.header-group-list{
+    display: flex;
+}
+.item-navigation{
+    margin-right: 50px;
+}
+.tel-header-group{
+    margin-left: 50px;
+}
+.item-navigation:last-child, {
+    margin-right: 0px;
+}
 
 .list{
     padding: 0px;
@@ -242,6 +269,10 @@ color: var(--web-link-color);
     color: var(--text-cecond-color);
     }
     .link-navigation{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -302,6 +333,25 @@ color: var(--web-link-color);
     cursor: pointer;
     }
 
+    .filter-conteiner{
+        padding-bottom: 94px;
+        padding-bottom: 50px;
+        
+    }
+    .filter-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+        .filter-item{
+            margin-right: 8px;
+        }
+        .filter-item:last-child {
+        margin-right: 0px;
+        }
+   
+
     .hero-btn{
     display: inline-block;
     padding: 10px 32px;
@@ -331,6 +381,16 @@ color: var(--web-link-color);
     color: var(--header-bg-color);
     background-color: var(--hover-color);
     cursor: pointer;
+    }
+    /* .footer */
+    .footer{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .footer-logo{
+    }
+    .footer-list{
+        padding-left: 0px;
     }
 
     /*current navigation  */
